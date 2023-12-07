@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: black;
+}
+
+.todo_list_yellow {
+  background-color: #ffdc40;
+  height: 28px;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.container {
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 336px;
+  height: 200px;
+  max-width: 878px;
+}
+
+.title {
+  color: #000;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.sortImg {
+  width: 25px;
+  height: 15px;
+  align-self: end;
+  margin-right: 30px;
+}
+
+.sortImg > img {
+  width: 100%;
+  height: 100%;
+}
+
+.row_img {
+  width: 286px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  background: rgba(196, 196, 196, 0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row_img > input {
+  width: 195px;
+}
+
+.row_img > input::placeholder{
+  font-weight: bold;
+}
+
+.deleteInput {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.deleteInput > img {
+  width: 100%;
+  height: 100%;
+}
+
+.deleteInput::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: url("../img/closeBtn.svg");
+  opacity: 0;
+  width: 20px;
+  height: 20px;  
+  transition: all 0.2s linear;
+}
+
+.deleteInput:hover::after {
+  opacity: 1;
+}
